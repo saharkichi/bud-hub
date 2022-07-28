@@ -5,14 +5,16 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  description: {
+  strain: {
     type: String,
     required: true,
   },
+// possible add precentages of thc and cbd
   price: {
     type: Number,
     required: true,
   },
+
   imageUrl: {
     type: String,
     required: true,
