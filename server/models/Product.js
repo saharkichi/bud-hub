@@ -9,7 +9,10 @@ const productSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-// possible add precentages of thc and cbd
+  cbd_thc: {
+    type: String,
+    required: true,
+  },
   price: {
     type: Number,
     required: true,
