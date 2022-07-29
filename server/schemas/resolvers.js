@@ -39,12 +39,12 @@ const resolvers = {
 
             return { token, user };
         },
-        
-        saveBook: async (parent, { bookData }, context) => {
+//CHANGED ALL INSTANCES OF BOOK TO PRODUCT
+        saveProduct: async (parent, { productData }, context) => {
             if (context.user) {
                 const updatedUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
-                    { $push: { savedBooks: bookData } },
+                    { $push: { savedProducts: productData } },
                     { new: true }
                 );
 
@@ -52,15 +52,15 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-
-        removeBook: async (parent, { bookId }, context) => {
+//CHANGED ALL INSTANCES OF BOOK TO PRODUCT
+        removeProduct: async (parent, { productId }, context) => {
             if (context.user) {
                 const updateUser = await User.findOneAndUpdate(
                     { _id: context.user._id },
                     {
                         $pull: {
-                            savedBooks: {
-                                bookId
+                            savedProducts: {
+                                productId
 
                             },
                         },
