@@ -14,11 +14,33 @@ import Products from './components/Products/products';
 import Signupform from './components/Signup/signupform';
 import Signuppage from './components/Signup/signuppage';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
+import {setContext} from '@apollo/client/context';
+
+const httpLink = createHttpLink ({uri:'/graphql'})
+const authLink = setContext((_, { headers }) => {
+    // get the authentication token from local storage if it exists
+    const token = localStorage.getItem('id_token');
+    // return the headers to the context so httpLink can read them
+    return {
+    headers: {
+    ...headers,
+    authorization: token ? `Bearer ${token}` : '',
+    },
+    };
+    });
+
+const apolloclient = new ApolloClient ({
+    link: authLink.concat(httpLink),
+    cache: new InMemoryCache()
+})
+
 
 
 function App() {
   return (
     <div className="App">
+<ApolloProvider client = {apolloclient}>
             <BrowserRouter>
             <Header/>
                 <Routes>
@@ -26,6 +48,7 @@ function App() {
                 </Routes>
             <Footer/>
             </BrowserRouter>
+</ApolloProvider>
          </div>
     );
 }

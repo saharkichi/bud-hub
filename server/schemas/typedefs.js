@@ -10,7 +10,7 @@ type Query {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveProduct(product: ProductInput!): User
+    saveProduct(productData: ProductInput!): User
     removeProduct(productId: ID!): User
 }
 
@@ -30,7 +30,14 @@ type Product {
     price: Int!
     imageUrl: String!
 }
-
+input ProductInput {
+    _id: ID
+    name: String
+    strain: String
+    cbd_thc: String
+    price: Int
+    imageUrl: String
+}
 type Auth {
     token: ID!
     user: User
@@ -41,8 +48,3 @@ module.exports = typeDefs
 
 
 
-// line 22 probably will need an auth type which 
-//will have a token and then a userkey that refs the usertype 
-//will also need to add a type query which refs any queries in resolvers
-// also need a type mutation which will ref mutations in resolvers and set params
-// reference activity 9
