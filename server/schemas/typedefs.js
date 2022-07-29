@@ -6,7 +6,7 @@ const typeDefs = gql `
 type Query {
     me: User
 }
-//CHANGED ALL INSTANCES OF BOOK TO PRODUCT
+
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
