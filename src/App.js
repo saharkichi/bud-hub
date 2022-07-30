@@ -30,7 +30,7 @@ const authLink = setContext((_, { headers }) => {
     };
     });
 
-const apolloclient = new ApolloClient ({
+const client = new ApolloClient ({
     link: authLink.concat(httpLink),
     cache: new InMemoryCache()
 })
@@ -40,7 +40,7 @@ const apolloclient = new ApolloClient ({
 function App() {
   return (
     <div className="App">
-<ApolloProvider client = {apolloclient}>
+<ApolloProvider client = {client}>
             <BrowserRouter>
             <Header/>
                 <Routes>
