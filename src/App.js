@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Cart from './components/Cart/cart';
 import CartItem from './components/Cart/cartItem';
-import Checkout from './components/Checkout/checkout';
+import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/footer';
 import Header from './components/Header/header';
 import AboutUs from './components/Homepage/Aboutus';
