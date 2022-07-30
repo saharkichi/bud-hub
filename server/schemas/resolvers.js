@@ -39,6 +39,10 @@ const resolvers = {
 
             return { token, user };
         },
+    //update user
+    // editUser: async (parent, { username, email, password}) => {
+    //     const user = await User.findOneAndUpdate
+    // }
 //CHANGED ALL INSTANCES OF BOOK TO PRODUCT
         saveProduct: async (parent, { productData }, context) => {
             if (context.user) {
