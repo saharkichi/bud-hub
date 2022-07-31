@@ -20,7 +20,7 @@ const userSchema = new Schema(
     },
 
     // set savedProducts to be an array of data that adheres to the productSchema
-    savedProducts: [{type: Schema.Types.ObjectId, ref:"product"}],
+    savedCart: [{type: Schema.Types.ObjectId, ref:"product"}],
   },
   // set this to use virtual below
   {
