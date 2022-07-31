@@ -13,7 +13,8 @@ import Navbar from './components/Navbar/Navbar';
 import Products from './components/Products/Products';
 import Signupform from './components/Signup/SignupForm';
 import Signuppage from './components/Signup/SignupPage';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
 
