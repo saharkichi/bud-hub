@@ -64,6 +64,12 @@ import {
 export default function App() {
     return (
       <Router>
+        <header>
+            BudHub
+            <nav>
+                <span> <Link to="/components/Login/LoginPage">Login</Link> </span>
+            </nav>
+        </header>
         <div>
           <nav>
             <ul>
@@ -71,7 +77,7 @@ export default function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/components/Products/Products">Products</Link>
               </li>
               <li>
                 <Link to="/users">Users</Link>
