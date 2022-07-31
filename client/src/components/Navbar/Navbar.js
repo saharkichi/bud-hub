@@ -8,10 +8,11 @@ function Navbar() {
 
       <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Products">Products &nbsp; &nbsp; </NavLink>
 
-      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Checkout">Checkout<img href="https://www.iconpacks.net/icons/2/free-shopping-cart-icon-3045-thumb.png" alt="shopping cart icon"/> &nbsp; &nbsp; </NavLink>
+      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Checkout">Checkout<img src="../../../assets/images/bud-cart.png" alt="shopping cart icon"/> &nbsp; &nbsp; </NavLink>
 
     </div>
   );
 }
 
 export default Navbar
+
