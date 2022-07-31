@@ -7,6 +7,7 @@ export const GET_ME = gql`
             username
             email
             savedCart {
+                productId
                 name
                 strain
                 cbd_thc
