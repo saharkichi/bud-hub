@@ -10,8 +10,8 @@ type Query {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    saveProduct(productData: ProductInput!): User
-    removeProduct(productId: ID!): User
+    AddToCart(productData: ProductInput!): User
+    RemoveFromCart(productId: ID!): User
 }
 
 type User {
@@ -19,7 +19,7 @@ type User {
     username: String!
     email: String!
     password: String
-    savedProducts: [Product]
+    savedCart: [Product]
 }
 
 type Product {
@@ -27,7 +27,7 @@ type Product {
     name: String!
     strain: String!
     cbd_thc: String!
-    price: Int!
+    pricePerGram: Int!
     imageUrl: String!
 }
 input ProductInput {
@@ -35,7 +35,7 @@ input ProductInput {
     name: String
     strain: String
     cbd_thc: String
-    price: Int
+    pricePerGram: Int
     imageUrl: String
 }
 type Auth {
