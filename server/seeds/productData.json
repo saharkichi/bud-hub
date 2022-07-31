@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Lemon Haze",
+      "strain": "Sativa",
+      "cbd_thc": "20% thc 20% cbd",
+      "pricePerGram": 10,
+      "imageUrl": "https://images.leafly.com/flower-images/defaults/red-orange-amber/strain-4.png?auto=compress&w=1200&h=630&fit=crop&bg=FFFFFF&fit=fill"
+    },
+    {
+        "name": "Pink Kush",
+        "strain": "Indica",
+        "cbd_thc": "20% thc 20% cbd",
+        "pricePerGram": 10,
+        "imageUrl": "https://leafly-cms-production.imgix.net/wp-content/uploads/2020/04/21143425/PINK-KUSH-020.jpg"
+      },
+      {
+        "name": "Pineapple Express",
+        "strain": "Sativa",
+        "cbd_thc": "20% thc 20% cbd",
+        "pricePerGram": 10,
+        "imageUrl": "https://images.hytiva.com/Pineapple-Express.jpg?mw667-mh1000"
+      },
+      {
+        "name": "Death Bubba",
+        "strain": "Indica",
+        "cbd_thc": "20% thc 20% cbd",
+        "pricePerGram": 10,
+        "imageUrl": "https://growingexposed.com/wp-content/uploads/2019/08/Death-Bubba-Feature-Photo-1.jpg"
+      },
+      {
+        "name": "Jean Guy",
+        "strain": "Hybrid",
+        "cbd_thc": "20% thc 20% cbd",
+        "pricePerGram": 10,
+        "imageUrl": "https://www.7acres.com/wp-content/uploads/2021/04/JEAN-GUY-transparent-square-1.png"
+      },
+      {
+        "name": "White Widow",
+        "strain": "Hybrid",
+        "cbd_thc": "20% thc 20% cbd",
+        "pricePerGram": 10,
+        "imageUrl": "https://images.leafly.com/flower-images/white-widow.png"
+      }
+]
