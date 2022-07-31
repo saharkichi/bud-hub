@@ -27,7 +27,7 @@ type Product {
     name: String!
     strain: String!
     cbd_thc: String!
-    price: Int!
+    pricePerGram: Int!
     imageUrl: String!
 }
 input ProductInput {
@@ -35,7 +35,7 @@ input ProductInput {
     name: String
     strain: String
     cbd_thc: String
-    price: Int
+    pricePerGram: Int
     imageUrl: String
 }
 type Auth {

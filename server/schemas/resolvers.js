@@ -39,11 +39,7 @@ const resolvers = {
 
             return { token, user };
         },
-    //update user
-    // editUser: async (parent, { username, email, password}) => {
-    //     const user = await User.findOneAndUpdate
-    // }
-//CHANGED ALL INSTANCES OF BOOK TO PRODUCT
+    
         saveProduct: async (parent, { productData }, context) => {
             if (context.user) {
                 const updatedUser = await User.findByIdAndUpdate(
@@ -56,7 +52,7 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-//CHANGED ALL INSTANCES OF BOOK TO PRODUCT
+
         removeProduct: async (parent, { productId }, context) => {
             if (context.user) {
                 const updateUser = await User.findOneAndUpdate(

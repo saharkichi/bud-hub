@@ -24,39 +24,43 @@ export const ADD_USER = gql`
     }
 `;
 
-export const SAVE_BOOK = gql`
-    mutation: saveBook($book: BookInput!){
-        saveBook(book: $book){
+export const ADD_TO_CART = gql`
+    mutation: AddToCart($product: ProductInput!){
+        AddToCart(product: $product){
             _id
-            username
-            email
-            bookCount
-            savedBooks {
-                bookId
-                authors
-                description
-                title
-                image
-                link
+            name
+            strain
+            cbd_thc
+            pricePerGram
+            imageUrl
+            savedCart {
+                productId
+                name
+                strain
+                cbd_thc
+                pricePerGram
+                imageUrl
             }
         }
     }
 `;
 
-export const REMOVE_BOOK = gql`
-    mutation: removeBook($bookId: ID!){
-        removeBook(bookId: $bookId){
+export const REMOVE_FROM_CART = gql`
+    mutation: RemoveFromCart($productId: ID!){
+        RemoveFromCart(productId: $productId){
             _id
-            username
-            email
-            bookCount
-            savedBooks {
-                bookId
-                authors
-                description
-                title
-                image
-                link
+            name
+            strain
+            cbd_thc
+            pricePerGram
+            imageUrl
+            savedCart {
+                productId
+                name
+                strain
+                cbd_thc
+                pricePerGram
+                imageUrl
             }
         }
     }
