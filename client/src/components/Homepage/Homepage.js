@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar/navbar';
+import Navbar from '../Navbar/Navbar';
 
-function Header() {
+function Homepage() {
     return (
         <div className="header">
             <h1>Bud Hub</h1>
@@ -10,4 +10,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Homepage
