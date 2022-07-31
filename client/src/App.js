@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Header from './components/Header/header';
-// import Footer from './components/Footer/footer';
+import Footer from './components/Footer/footer';
 
 // import './App.css';
 // import Cart from './components/Cart/cart';
@@ -83,7 +83,7 @@ export default function App() {
               <Home />
             </Route>
           </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </Router>
       </ApolloProvider>
     );
