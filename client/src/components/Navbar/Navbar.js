@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import ShoppingCartIcon from "../../assets/images/bud-cart.png"
+import "./style.css";
 
 function Navbar() {
     return (
@@ -8,7 +10,7 @@ function Navbar() {
 
       <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Products">Products &nbsp; &nbsp; </NavLink>
 
-      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Checkout">Checkout<img src="../../../assets/images/bud-cart.png" alt="shopping cart icon"/> &nbsp; &nbsp; </NavLink>
+      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Cart"><img className="SC" src={ShoppingCartIcon} alt="shopping cart icon"></img> </NavLink>
 
     </div>
   );
