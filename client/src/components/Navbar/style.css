@@ -1,13 +1,34 @@
 .SC {
     max-width: 40px;
     max-height: auto;
-    margin-left: 800px;
+    position: absolute;
+    right: 30px;
+    top: 320px;
+    
+}
+    
+    
+
+#WWA{
+   margin-left: 50px;
+    padding-right: 50px;
 }
 
+#prods {
+    margin-left: 50px;
+    padding-right: 75px;
+    
+} 
 #nav {
-    background-color: #3ab44a;
-    display:flex;
-    justify-content:flex-end;
-    margin-top: 20px;
-   
+
+background-color: #3ab44a;
+display:flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
+text-align: center;
+margin-left: auto;
+margin-right:auto;
+width: 100%;
+height:50px;
 }
