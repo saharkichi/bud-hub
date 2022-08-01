@@ -8,7 +8,8 @@ function Header() {
     return (
         <div className="header">
            <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Home"> <img className="logo" src={Logo} alt="BudHub"></img> </NavLink>
-            <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Login">Login </NavLink>        
+           <br/>
+            <NavLink id="LoginLink" className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Login">Login </NavLink>        
             <Navbar />    
         </div>
     )

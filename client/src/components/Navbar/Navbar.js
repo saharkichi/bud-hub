@@ -6,9 +6,9 @@ import "./style.css";
 function Navbar() {
     return (
         <div id="nav" className='navigation'>
-      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Aboutus">Who We Are &nbsp; &nbsp; </NavLink>
+      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Aboutus">Who We Are &nbsp;</NavLink>
 
-      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Products">Products &nbsp; &nbsp; </NavLink>
+      <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Products">Products</NavLink>
 
       <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Cart"><img className="SC" src={ShoppingCartIcon} alt="shopping cart icon"></img> </NavLink>
 

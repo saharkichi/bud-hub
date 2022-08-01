@@ -1,5 +1,11 @@
 .logo {
     max-width: 100%;
     max-height: auto;
-    margin-left: 500px;
+    margin-left: 750px;
+    display:flex;
+}
+
+#LoginLink {
+    display: flex;
+    justify-content: end;
 }
