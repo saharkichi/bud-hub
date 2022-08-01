@@ -10,10 +10,7 @@ import Footer from './components/Footer/footer';
 import Homepage from './components/Homepage/Homepage';
 import './App.css';
 
-
-
 import Cart from './components/Cart/cart.js';
-import SignupPage from './components/Signup/SignupPage';
 import AboutUs from './components/Homepage/AboutUs';
 
 
@@ -63,7 +60,6 @@ export default function App() {
 <Route path="/Products" element={<Products/>}/>
 <Route path="/Cart" element={<Cart/>}/>
 <Route path="/Login" element={<LoginPage/>}/>
-<Route path="/Signup" element={<SignupPage/>}/>
 
           
           </Routes>
