@@ -6,8 +6,14 @@ import "./style.css";
 
 function Cart() {
     return (
-     <div>Items
-         Checkout button
+     <div> <h1>Cart Items:</h1>
+         
+         
+         
+         
+         
+         
+         <button>Checkout</button>
      </div>   
     )
 }
