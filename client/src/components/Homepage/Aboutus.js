@@ -1,9 +1,30 @@
 import React from 'react';
 import "./style.css";
+const Sahar = require("../../assets/images/sahar.jpeg"); 
+const Link = require("../../assets/images/link.jpeg");
+const Mariya = require("../../assets/images/mariya.jpeg");
 
 function AboutUs() {
     return (
-     <div>Who We Are</div>   
+     <div>
+         <h1>Who We Are</h1>
+                <p>Welcome to our page and about us section, please meet the team!</p> 
+            <section>
+                <h2>Sahar Kichi</h2>
+                <img className="sahar" src={Sahar} alt="Sahar Headshot"></img>
+            </section>
+
+            <section>
+                <h2>Link Kawar</h2>
+                <img className="link" src={Link} alt="Link Headshot"></img>
+            </section>
+
+            <section>
+                <h2>Mariya Setko</h2>
+                <img className="mariya" src={Mariya} alt="Mariya Headshot"></img>
+             </section>
+     </div>   
+        
     )
 }
 
