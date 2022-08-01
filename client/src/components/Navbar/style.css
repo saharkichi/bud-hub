@@ -1,4 +1,13 @@
 .SC {
     max-width: 40px;
     max-height: auto;
+    margin-left: 800px;
+}
+
+#nav {
+    background-color: #3ab44a;
+    display:flex;
+    justify-content:flex-end;
+    margin-top: 20px;
+   
 }
