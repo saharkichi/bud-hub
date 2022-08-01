@@ -1,12 +1,9 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import "./style.css";
 
 function Homepage() {
     return (
-        <div className="header">
-            <h1>Bud Hub</h1>
-            <Navbar />
-        </div>
+     <div>Featured Products:</div>   
     )
 }
 
