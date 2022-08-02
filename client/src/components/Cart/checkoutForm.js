@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css";
 
-function checkoutForm() {
+function checkoutForm() { 
     return (
         <div class="row">
                     <div class="col-75">
