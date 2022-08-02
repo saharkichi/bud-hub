@@ -17,12 +17,14 @@
       text-align: center;
       font-size: 40px;
       color: green;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     
     .pricetag {
       text-align: center;
       font-size: 30px;
       color: green;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     
     .productText {
@@ -30,6 +32,7 @@
       font-size: 30px;
       font-weight: bolder;
       color: green;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     
     .ATC {
