@@ -6,7 +6,9 @@
   margin-right: auto;
 }
 #LoginLink {
+  font-size: larger;
     display: flex;
     justify-content: flex-end;
+    background-color: lavender;
 }
 

@@ -8,10 +8,12 @@
 }
 
 h2 {
-    color: green
+    color: green;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h1 {
+    background-color: lavender;
     color: black;
     text-align: center;
 }
