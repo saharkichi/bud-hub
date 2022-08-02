@@ -28,7 +28,6 @@ h1 {
     }
     }   
 
-
 .modal {
   max-width: 15%;
   max-height: 30%;
@@ -47,10 +46,6 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-h1 {
-  color: white;
 }
 
 .modal-backdrop {

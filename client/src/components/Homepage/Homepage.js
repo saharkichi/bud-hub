@@ -1,13 +1,7 @@
 import React from 'react';
 import "./style.css";
 import background from "../../assets/images/background.png";
-import AgeModal from './AgeModal';
- 
-function componentWillMount() {
-    AgeModal();
-};
 
-componentWillMount();
 
 function Homepage() {
     return (
