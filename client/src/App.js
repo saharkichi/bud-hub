@@ -12,7 +12,7 @@ import Homepage from './components/Homepage/Homepage';
 import Cart from './components/Cart/cart.js';
 import AboutUs from './components/Homepage/AboutUs';
 import Checkout from './components/Cart/Checkout'
-
+import "./app.css";
 import LoginPage from './components/Login/LoginPage';
 
 import Products from './components/Products/Products';

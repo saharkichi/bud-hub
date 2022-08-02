@@ -1,0 +1,9 @@
+.App {
+    text-align: center;
+    background-image: url("../../client/src/assets/images/backgroundInv.png");
+    background-size: 25%;
+  }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

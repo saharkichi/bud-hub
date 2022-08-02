@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/BudHub-logo.png"
 import "./style.css";
 
+
 function Header() {
     return (
         <div className="header">

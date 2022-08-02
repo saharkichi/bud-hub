@@ -25,7 +25,7 @@ function AboutUs() {
             <section>
                 <h2>Mariya Setko</h2>
                 <img className="mariya" src={Mariya} alt="Mariya Headshot"></img>
-                <p className="para"> My name is Sahar Kichi! I recently moved downtown Toronto in 2021 after living in Burlington my entire life! I am a complete newbie when it comes to web development and coding after deciding to choose this career choice over my orginial plan of law school. I recently graduated from Ryerson University with a Bachelor of Arts in Criminology and looking forward to complete my program at the University of Toronto. Ive learnt relevant languages such as HTML, CSS, React, Javascript and more!
+                <p className="para"> Hey! My name is Mariya. I am an aspiring full stack developer, currently studying at UofT in order to achieve that goal. The logic, need for attention to detail, and level of organization drew me to coding as a second career. Prior to bootcamp, I worked in the outdoor advertising industry for four years as a Production Specialist. My experience there has taught me the value of teamwork, importance for efficiency, and creative problemsolving. Work was most enjoyable when I was faced new problems and came up with ways to meet client expectations despite facing obstacles.
                 </p>
              </section>
      </div>   
