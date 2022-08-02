@@ -10,10 +10,12 @@ import Footer from './components/Footer/footer';
 import Homepage from './components/Homepage/Homepage';
 
 import Cart from './components/Cart/cart.js';
+import Thankyou from './components/Cart/Thankyou.js';
 import AboutUs from './components/Homepage/AboutUs';
 import Checkout from './components/Cart/Checkout'
 import "./app.css";
 import LoginPage from './components/Login/LoginPage';
+
 
 import Products from './components/Products/Products';
 
@@ -59,6 +61,7 @@ export default function App() {
 <Route path="/Cart" element={<Cart/>}/>
 <Route path="/Login" element={<LoginPage/>}/>
 <Route path="/Checkout" element={<Checkout/>}/>
+<Route path="/Thankyou" element={<Thankyou/>}/>
 
           
           </Routes>

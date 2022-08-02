@@ -2,6 +2,7 @@ import React from 'react';
 import "./style.css";
 
 function SignupForm() {
+    
     return(
         <form action="action_page.php">
             <div className="container">
@@ -21,7 +22,6 @@ function SignupForm() {
                         <p>By creating an account you agree to our <a href="#">Terms and Privacy</a>.</p>
 
                         <div className="clearfix">
-                            <button type="button" className="cancelbtn">Cancel</button>
                             <button type="submit" className="signupbtn">Sign Up</button>
                         </div>
             </div>
