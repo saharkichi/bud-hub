@@ -5,18 +5,18 @@ import "./style.css";
 function AgeModal() {
     return (
 <body>
-  <div class="modal fade" id="ageModal" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static"
+  <div className="modal fade" id="ageModal" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static"
     data-keyboard="false">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12" id="modal-age-limit" style="margin-bottom: 2.5rem;
+    <div className="modal-dialog modal-dialog-centered" role="document">
+      <div className="modal-content">
+        <div className="modal-body">
+          <div className="row">
+            <div className="col-xs-12 col-sm-12" id="modal-age-limit" style="margin-bottom: 2.5rem;
             color: #fff;">
-              <h3 class="hidden-xs"><strong>MUST BE 18 TO ENTER</strong></h3>
+              <h3 className="hidden-xs"><strong>MUST BE 18 TO ENTER</strong></h3>
             </div>
-            <div class="col-xs-4 col-sm-4 mobile-margin-bottom">
-              <select name="month" class="form-control" id="verify-month">
+            <div className="col-xs-4 col-sm-4 mobile-margin-bottom">
+              <select name="month" className="form-control" id="verify-month">
                 <option value="none">Month</option>
                 <option value="1">January</option>
                 <option value="2">February</option>
@@ -32,8 +32,8 @@ function AgeModal() {
                 <option value="12">December</option>
               </select>
             </div>
-            <div class="col-xs-4 col-sm-4 mobile-margin-bottom">
-              <select name="day" class="form-control" id="verify-day">
+            <div className="col-xs-4 col-sm-4 mobile-margin-bottom">
+              <select name="day" className="form-control" id="verify-day">
                 <option value="none">Day</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -68,8 +68,8 @@ function AgeModal() {
                 <option value="31">31</option>
               </select>
             </div>
-            <div class="col-xs-4 col-sm-4">
-              <select name="Year" class="form-control" id="verify-year">
+            <div className="col-xs-4 col-sm-4">
+              <select name="Year" className="form-control" id="verify-year">
                 <option value="none">Year</option>
                 <option value="1940">1940</option>
                 <option value="1941">1941</option>
@@ -148,9 +148,9 @@ function AgeModal() {
                 <option value="2014">2014</option>
               </select>
             </div>
-            <div class="col-xs-12 col-lg-12" id="age-submit-area" style="margin-top: 2rem;
+            <div className="col-xs-12 col-lg-12" id="age-submit-area" style="margin-top: 2rem;
             color: #fff;">
-              <a href="#" class="btn btn-default" id="age-submit">SUBMIT</a>
+              <a href="#" className="btn btn-default" id="age-submit">SUBMIT</a>
             </div>
           </div>
         </div>

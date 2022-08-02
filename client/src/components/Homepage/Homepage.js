@@ -2,7 +2,6 @@ import React from 'react';
 import "./style.css";
 import background from "../../assets/images/background.png";
 
-
 function Homepage() {
     return (
         
