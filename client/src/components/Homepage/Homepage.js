@@ -2,11 +2,11 @@ import React from 'react';
 import "./style.css";
 import background from "../../assets/images/background.png";
 
-
 function Homepage() {
     return (
+        
     <div>
-        <div style={{ backgroundImage: `url(${background})` }}> </div>
+        <div style={{ backgroundImage: `url(${background})`}}> </div>
          <h1 className="blink">Flash Sales</h1>
                     <h6 className="productTitle">Lemon Haze</h6>
                         <div>
@@ -23,7 +23,7 @@ function Homepage() {
                             <img className = "productimage"src="https://leafly-cms-production.imgix.net/wp-content/uploads/2020/04/21143425/PINK-KUSH-020.jpg" alt=""></img>
                             <p className ="productText"> Strain: Indica<br/>CBD-THC": "20%-20%
                             </p>
-                            <h6 className="pricetag">$ ​7/Gram</h6>
+                            <h6 className="pricetag">$ 7/Gram</h6>
                             <button className="ATC">Add to Cart</button>
                         </div>
                     </div>
