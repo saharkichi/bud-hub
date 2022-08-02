@@ -11,7 +11,7 @@ import Homepage from './components/Homepage/Homepage';
 
 import Cart from './components/Cart/cart.js';
 import AboutUs from './components/Homepage/AboutUs';
-
+import Checkout from './components/Cart/Checkout'
 
 import LoginPage from './components/Login/LoginPage';
 
@@ -58,6 +58,7 @@ export default function App() {
 <Route path="/Products" element={<Products/>}/>
 <Route path="/Cart" element={<Cart/>}/>
 <Route path="/Login" element={<LoginPage/>}/>
+<Route path="/Checkout" element={<Checkout/>}/>
 
           
           </Routes>

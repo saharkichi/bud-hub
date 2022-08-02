@@ -1,6 +1,7 @@
 import React from 'react';
 import "./style.css";
-import CheckoutForm from './checkoutForm';
+import { NavLink } from "react-router-dom";
+
 
 
 function Cart() {
@@ -10,7 +11,7 @@ function Cart() {
          
          
          
-         <button>Checkout</button>
+         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Checkout"> <button>Checkout</button> </NavLink>
      </div>   
     )
 }

@@ -4,7 +4,7 @@ import "./style.css";
 function Homepage() {
     return (
     <div>
-         <h1 class="blink">Flash Sales</h1>
+         <h1 className="blink">Flash Sales</h1>
                     <h6 className="productTitle">Lemon Haze</h6>
                         <div>
                             <img className = "productimage" src="https://images.leafly.com/flower-images/defaults/red-orange-amber/strain-4.png?auto=compress&amp;w=1200&amp;h=630&amp;fit=crop&amp;bg=FFFFFF&amp;fit=fill" alt=""></img>
