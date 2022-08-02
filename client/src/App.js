@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,7 +19,10 @@ import Products from './components/Products/Products';
 
 import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
+import Modal from "react-modal";
+import { MDBCheckbox } from 'mdb-react-ui-kit';
 
+import "../src/components/Homepage/style.css";
 
 
 const httpLink = createHttpLink ({uri:'/graphql'})
@@ -41,10 +44,21 @@ const client = new ApolloClient ({
 })
 
 
-
+Modal.setAppElement('#root')
 export default function App() {
+  const [modalIsOpen, setModalIsOpen] = useState(true)
     return (
-      <div className="App">
+      <body>
+        <div className="App">
+          <Modal className="modal" isOpen={modalIsOpen}>
+          <h1>Welcome to BudHub!</h1>
+          <p>Are you over 19?</p>
+          <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Yes' />
+      <MDBCheckbox name='flexCheck' value='' id='flexCheckChecked' label='No' />
+            <button onClick={() => setModalIsOpen(false)}>Continue to site</button>
+      
+          
+        </Modal>
 
       <ApolloProvider client = {client}>
       <Router>
@@ -66,5 +80,6 @@ export default function App() {
       </Router>
       </ApolloProvider>
       </div>
+      </body>
     );
   }
