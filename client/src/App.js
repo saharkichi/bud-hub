@@ -22,6 +22,7 @@ import Products from './components/Products/Products';
 import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
 import Modal from "react-modal";
+import { MDBCheckbox } from 'mdb-react-ui-kit';
 
 import "../src/components/Homepage/style.css";
 
@@ -51,6 +52,14 @@ export default function App() {
     return (
       <body>
         <div className="App">
+
+          <Modal className="modal" isOpen={modalIsOpen}>
+          <h1>Welcome to BudHub!</h1>
+          <p>Are you over 19?</p>
+          <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Yes' />
+      <MDBCheckbox name='flexCheck' value='' id='flexCheckChecked' label='No' />
+            <button onClick={() => setModalIsOpen(false)}>Continue to site</button>
+      
           <Modal isOpen={modalIsOpen}>
           <button onClick={() => setModalIsOpen(false)}>Close</button>
   <div className="modal fade" id="ageModal" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static"
