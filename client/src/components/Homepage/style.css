@@ -8,5 +8,16 @@ h2 {
 }
 
 h1 {
-    color: black
+    color: black;
+    text-align: center;
 }
+
+.blink {
+    animation: blinker 2s step-start infinite;
+    }
+    
+    @keyframes blinker {
+    40% {
+      opacity: 0;
+    }
+    }   

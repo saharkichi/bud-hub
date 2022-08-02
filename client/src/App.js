@@ -18,11 +18,8 @@ import LoginPage from './components/Login/LoginPage';
 
 import Products from './components/Products/Products';
 
-
-
 import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
-
 
 
 const httpLink = createHttpLink ({uri:'/graphql'})
