@@ -1,12 +1,12 @@
-* {
-    color: gray;
-}
-
 .sahar, .mariya, .link {
     height: 30%;
     width: 30%;
 }
 
-h1, h2 {
+h2 {
     color: green
+}
+
+h1 {
+    color: black
 }

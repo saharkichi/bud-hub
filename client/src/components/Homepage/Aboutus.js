@@ -7,8 +7,8 @@ const Mariya = require("../../assets/images/mariya.jpeg");
 function AboutUs() {
     return (
      <div>
-         <h1>Who We Are</h1>
-                <p>Welcome to our page and about us section, please meet the team!</p> 
+         <h1>Meet our Team!</h1>
+            
             <section>
                 <h2>Sahar Kichi</h2>
                 <img className="sahar" src={Sahar} alt="Sahar Headshot"></img>
