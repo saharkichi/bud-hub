@@ -25,7 +25,7 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_TO_CART = gql`
-    mutation: AddToCart($product: ProductInput!){
+    mutation AddToCart($product: ProductInput!){
         AddToCart(product: $product){
             _id
             name
@@ -46,7 +46,7 @@ export const ADD_TO_CART = gql`
 `;
 
 export const REMOVE_FROM_CART = gql`
-    mutation: RemoveFromCart($productId: ID!){
+    mutation RemoveFromCart($productId: ID!){
         RemoveFromCart(productId: $productId){
             _id
             name
