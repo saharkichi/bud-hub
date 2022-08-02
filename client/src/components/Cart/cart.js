@@ -11,7 +11,7 @@ function Cart() {
          
          
          
-         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Checkout"> <button>Checkout</button> </NavLink>
+         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')}to="/Checkout"> <button className='checkoutbtn'>Checkout</button> </NavLink>
      </div>   
     )
 }

@@ -6,7 +6,7 @@ function checkoutForm() {
         <div className="row">
                     <div className="col-75">
                             <div className="container">
-                                    <form action="/action_page.php">
+                                    <form action="/Thankyou">
 
                                         <div className="row">
                                                 <div className="col-50">
@@ -64,28 +64,14 @@ function checkoutForm() {
                                                                 <label>
                                                                 <input type="checkbox" defaultChecked="checked" name="sameadr"/> Shipping address same as billing
                                                                 </label>
-                                                                <input type="submit" value="Continue to checkout" className="btn"/>
+                                                                <input href="/Thankyou" type="submit" value="Continue to checkout" className="btn"/>
                                                             </form>
                                                             </div>
                                                         </div>
 
-                                                        <div className="col-25">
-                                                            <div className="container">
-                                                            <h4>Cart
-                                                                <span className="price">
-                                                                <i className="fa fa-shopping-cart"></i>
-                                                                <b>4</b>
-                                                                </span>
-                                                            </h4>
-                                                            <p><a href="#">Product 1</a> <span className="price">$15</span></p>
-                                                            <p><a href="#">Product 2</a> <span className="price">$5</span></p>
-                                                            <p><a href="#">Product 3</a> <span className="price">$8</span></p>
-                                                            <p><a href="#">Product 4</a> <span className="price">$2</span></p>
-                                                            
-                                                            <p>Total <span className="price"><b>$30</b></span></p>
-                                                            </div>
+                                
                                                         </div>
-                                                        </div>
+                                                       
     )
 }
 
