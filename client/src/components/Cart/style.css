@@ -64,16 +64,12 @@
     cursor: pointer;
     font-size: 17px;
   }
-  .ATC {
-    height: 50px;
-    border: 3px solid green;
-    margin-left: 775px;
-   
-  }
+
   .checkoutbtn{
     margin-top: 500px;
     margin-left: 800px;
   }
+
   .btn:hover {
     background-color: #45a049;
   }
