@@ -10,21 +10,26 @@
       margin-right: auto;
       max-width: 250px;
       max-height: auto;
+      color: green;
     }
     
     .productTitle {
       text-align: center;
-      font-size: 30px;
+      font-size: 40px;
+      color: green;
     }
     
     .pricetag {
       text-align: center;
-      font-size: 20px;
+      font-size: 30px;
+      color: green;
     }
     
     .productText {
       text-align: center;
-      font-size: 16px;
+      font-size: 30px;
+      font-weight: bolder;
+      color: green;
     }
     
    
