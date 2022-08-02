@@ -1,8 +1,7 @@
-// import CartItem from './cartItem';
-// import Form from './checkoutForm';
 import React from 'react';
 import "./style.css";
-import heckoutForm from './checkoutForm';
+import CheckoutForm from './checkoutForm';
+
 
 function Cart() {
     return (
