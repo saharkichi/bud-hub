@@ -8,7 +8,6 @@ import {
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
 import Homepage from './components/Homepage/Homepage';
-import './App.css';
 
 import Cart from './components/Cart/cart.js';
 import AboutUs from './components/Homepage/AboutUs';
@@ -20,6 +19,7 @@ import Products from './components/Products/Products';
 
 import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
+
 
 
 const httpLink = createHttpLink ({uri:'/graphql'})
@@ -45,6 +45,7 @@ const client = new ApolloClient ({
 export default function App() {
     return (
       <div className="App">
+
       <ApolloProvider client = {client}>
       <Router>
         <Header/>
