@@ -5,6 +5,7 @@ const typeDefs = gql `
 
 type Query {
     me: User
+    product: Product
 }
 
 type Mutation {

@@ -25,8 +25,8 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_TO_CART = gql`
-    mutation AddToCart($product: ProductInput!){
-        AddToCart(product: $product){
+    mutation AddToCart($productData: ProductInput!){
+        AddToCart(productData: $productData){
             _id
             name
             strain
