@@ -13,7 +13,7 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-        product: async () => {return Product.findall()}
+        product: async () => {return Product.find()}
     },
 
     Mutation: {

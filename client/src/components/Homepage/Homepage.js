@@ -14,7 +14,7 @@ function Homepage() {
                             <p className ="productText">Strain: Sativa<br/>CBD-THC": "20%-20%
                             </p>
                             <h6 className="pricetag">$ 7/Gram</h6>
-                            <button className="ATC">Add to Cart</button>
+                            
                       </div>
                 
                     <div>
@@ -24,7 +24,7 @@ function Homepage() {
                             <p className ="productText"> Strain: Indica<br/>CBD-THC": "20%-20%
                             </p>
                             <h6 className="pricetag">$ 7/Gram</h6>
-                            <button className="ATC">Add to Cart</button>
+                            
                         </div>
                     </div>
                         <div>
@@ -34,7 +34,7 @@ function Homepage() {
                                     <p className ="productText"> Strain: Sativa<br/>CBD-THC": "20%-20%
                                     </p>
                                     <h6 className="pricetag"> $ 7/Gram</h6>
-                                    <button className="ATC">Add to Cart</button>
+                                    
                         </div>
      </div>                     </div>
     )

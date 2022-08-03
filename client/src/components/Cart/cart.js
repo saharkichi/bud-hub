@@ -41,7 +41,7 @@ const Cart = () => {
             <div> 
                 <h1>Cart Items:</h1>
                 <div>
-                <h1>Viewing {userData.username}'s cart</h1>
+                <h1>Viewing User's cart</h1>
                 </div>
 
         <div>

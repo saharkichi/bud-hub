@@ -21,7 +21,7 @@ export const GET_ME = gql`
 export const GET_PRODUCTS = gql `
 query product {
     product {
-    productId
+        _id
         name
         strain
         cbd_thc
