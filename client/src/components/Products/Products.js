@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
+import {
+  Card,
+  CardColumns,
+} from 'react-bootstrap';
 import { useMutation, useQuery } from '@apollo/client';
 import {GET_PRODUCTS} from '../../utils/queries';
 import { ADD_TO_CART } from '../../utils/mutations';
@@ -7,35 +11,45 @@ import { saveProductIds, getSavedProductIds } from '../../utils/localStorage';
 
 import Auth from '../../utils/auth';
 
+
 function Products() {
-const [loading,data] = useQuery(GET_PRODUCTS)
-const searchedProducts = data?.product || []
-   // const handleSaveProduct = async (productId) => {
-    //     // find the Product in `searchedProducts` state by the matching id
-    //     const productToSave = searchedProducts.find((product) => product.productId === productId);
+const [savedProductIds, setSavedProductIds] = useState(getSavedProductIds());
+const [saveProduct] = useMutation(ADD_TO_CART);
+const [data] = useQuery(GET_PRODUCTS)
+const savedProducts = data?.product || []
+
+useEffect(() => {
+  return () => saveProductIds(savedProductIds);
+});
+const handleSaveProduct = async (productId) => {
+// find the Product in `searchedProducts` state by the matching id
+const productToSave = savedProducts.find((product) => product.productId === productId);
     
-    //     // get token
-    //     const token = Auth.loggedIn() ? Auth.getToken() : null;
+  // get token
+const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+  if (!token) {
+    return false;
+   }
     
-    //     if (!token) {
-    //       return false;
-    //     }
-    
-    //     try {
-    //       const { data } = await saveProduct({
-    //         variables: { productData: { ...productToSave } },
-    //       });
-    //       console.log(savedProductIds);
-    //       setSavedProductIds([...savedProductIds, productToSave.productId]);
-    //     } catch (err) {
-    //       console.error(err);
-    //     }
-    //   };
+     try {
+    const { data } = await saveProduct({
+    variables: { productData: { ...productToSave } },
+     });
+    console.log(savedProductIds);
+    setSavedProductIds([...savedProductIds, productToSave.productId]);
+    } catch (err) {
+     console.error(err);
+     }
+     };
+
+     
     return (
        <section>
               <div>
                 <h1 id="flowerheader">Flower</h1>
                 <div>
+                  {/* possible change cards to card */}
                   <div>
                     <div>
                       <div>
@@ -44,7 +58,20 @@ const searchedProducts = data?.product || []
                         <p className ="productText">Strain: Sativa<br/>CBD-THC": "20%-20%
                         </p>
                         <h6 className="pricetag">$ 10/Gram</h6>
-                        <button className="ATC">Add to Cart</button>
+                        {Auth.loggedIn() && (
+                    <Button
+                      disabled={savedProductIds?.some(
+                        (savedId) => savedId === product.productId
+                      )}
+                      className="btn-block btn-info"
+                      onClick={() => handleSaveProduct(product.productId)}
+                    >
+                      {savedProductIds?.some((savedId) => savedId === product.productId)
+                        ? 'You already purchased this'
+                        : 'Add to Cart'}
+                    </Button>
+                  )}
+                  <button className="ATC">Add to Cart</button>
                       </div>
                     </div>
                     <div>
