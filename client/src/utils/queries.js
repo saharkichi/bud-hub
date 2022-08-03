@@ -27,7 +27,6 @@ query product {
         cbd_thc
         pricePerGram
         imageUrl
-
     }
 }
 `
