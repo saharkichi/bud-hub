@@ -64,7 +64,7 @@ function checkoutForm() {
                                                                 <label>
                                                                 <input type="checkbox" defaultChecked="checked" name="sameadr"/> Shipping address same as billing
                                                                 </label>
-                                                                <input href="/Thankyou" type="submit" value="Continue to checkout" className="btn"/>
+                                                                <button href="/Thankyou" className="btn"> Continue to checkout</button>
                                                             </form>
                                                             </div>
                                                         </div>

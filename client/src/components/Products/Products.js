@@ -1,7 +1,36 @@
 import React from 'react';
 import "./style.css";
+import { useMutation, useQuery } from '@apollo/client';
+import {GET_PRODUCTS} from '../../utils/queries';
+import { ADD_TO_CART } from '../../utils/mutations';
+import { saveProductIds, getSavedProductIds } from '../../utils/localStorage';
+
+import Auth from '../../utils/auth';
 
 function Products() {
+const [loading,data] = useQuery(GET_PRODUCTS)
+const searchedProducts = data?.product || []
+   // const handleSaveProduct = async (productId) => {
+    //     // find the Product in `searchedProducts` state by the matching id
+    //     const productToSave = searchedProducts.find((product) => product.productId === productId);
+    
+    //     // get token
+    //     const token = Auth.loggedIn() ? Auth.getToken() : null;
+    
+    //     if (!token) {
+    //       return false;
+    //     }
+    
+    //     try {
+    //       const { data } = await saveProduct({
+    //         variables: { productData: { ...productToSave } },
+    //       });
+    //       console.log(savedProductIds);
+    //       setSavedProductIds([...savedProductIds, productToSave.productId]);
+    //     } catch (err) {
+    //       console.error(err);
+    //     }
+    //   };
     return (
        <section>
               <div>

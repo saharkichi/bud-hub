@@ -67,13 +67,15 @@ export default function App() {
         <Header/>
 
           <Routes>
-          
+            
+<Route path="/" element={<Homepage/>}/>         
 <Route path="/Home" element={<Homepage/>}/>
 <Route path="/Aboutus" element={<AboutUs/>}/>
 <Route path="/Products" element={<Products/>}/>
 <Route path="/Cart" element={<Cart/>}/>
 <Route path="/Login" element={<LoginPage/>}/>
 <Route path="/Checkout" element={<Checkout/>}/>
+<Route path="/Thankyou" element={<Thankyou/>}/>
 
           
           </Routes>

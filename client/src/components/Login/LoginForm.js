@@ -8,7 +8,7 @@ import Auth from '../../utils/auth';
 
 const LoginForm = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+  const [login] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -42,15 +42,17 @@ const LoginForm = (props) => {
   };
 
     return (
-        <form action="action_page.php" method="post">
+        <form onSubmit={handleFormSubmit}>
             
 
             <div className="container">
             <h1>Login</h1>
-                <label htmlFor="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required/>
+                <label htmlFor="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Username" name="email" required value={formState.email}
+                  onChange={handleChange}/>
                 <label htmlFor="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required/>
+                <input type="password" placeholder="Enter Password" name="password" required value={formState.password}
+                  onChange={handleChange}/>
                 <button type="submit" className='loginbtn'>Login</button>
                     
             </div>
