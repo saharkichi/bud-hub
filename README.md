@@ -21,5 +21,10 @@ https://github.com/saharkichi/bud-hub
 
 ## Deployed App Link:
 
+https://infinite-fortress-86578.herokuapp.com/
+
+## Screenshot:
+
+![alt text](./client/src/assets/images/Screenshot1.png)
 
 
