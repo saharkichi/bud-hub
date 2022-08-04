@@ -11,7 +11,7 @@ import Homepage from './components/Homepage/Homepage';
 
 import Cart from './components/Cart/cart.js';
 import Thankyou from './components/Cart/Thankyou.js';
-import AboutUs from './components/Homepage/AboutUs';
+import AboutUs from './components/Homepage/Aboutus.js';
 import Checkout from './components/Cart/Checkout'
 import "./app.css";
 import LoginPage from './components/Login/LoginPage';
