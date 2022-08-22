@@ -27,41 +27,38 @@ export const ADD_USER = gql`
 export const ADD_TO_CART = gql`
     mutation AddToCart($productData: ProductInput!){
         AddToCart(productData: $productData){
-            _id
-            name
-            strain
-            cbd_thc
-            pricePerGram
-            imageUrl
-            savedCart {
-                productId
+                _id
+                username
+                email
+                savedCart {
+                _id
                 name
                 strain
                 cbd_thc
                 pricePerGram
                 imageUrl
             }
+            
         }
     }
 `;
 
 export const REMOVE_FROM_CART = gql`
-    mutation RemoveFromCart($productId: ID!){
-        RemoveFromCart(productId: $productId){
-            _id
-            name
-            strain
-            cbd_thc
-            pricePerGram
-            imageUrl
-            savedCart {
-                productId
+    mutation RemoveFromCart($_id: ID!){
+        RemoveFromCart(_id: $_id) {
+            
+                _id
+                username
+                email
+                savedCart {
+                _id
                 name
                 strain
                 cbd_thc
                 pricePerGram
                 imageUrl
             }
+         }
         }
-    }
+    
 `;

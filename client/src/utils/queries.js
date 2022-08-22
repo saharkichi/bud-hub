@@ -1,13 +1,13 @@
 import { gql } from '@apollo/client';
 
 export const GET_ME = gql`
-    query me {
-        user {
+     {
+        me {
             _id
             username
             email
             savedCart {
-                productId
+                _id
                 name
                 strain
                 cbd_thc
@@ -19,8 +19,8 @@ export const GET_ME = gql`
 `
 
 export const GET_PRODUCTS = gql `
-query product {
-    product {
+{
+    getProducts {
         _id
         name
         strain

@@ -5,7 +5,7 @@ const typeDefs = gql `
 
 type Query {
     me: User
-    product: [Product]
+    getProducts: [Product]
 }
 
 type Mutation {
@@ -24,12 +24,12 @@ type User {
 }
 
 type Product {
-    _id: ID!
-    name: String!
-    strain: String!
-    cbd_thc: String!
-    pricePerGram: Int!
-    imageUrl: String!
+    _id: ID
+    name: String
+    strain: String
+    cbd_thc: String
+    pricePerGram: Int
+    imageUrl: String
 }
 input ProductInput {
     _id: ID
