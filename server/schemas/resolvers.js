@@ -13,7 +13,7 @@ const resolvers = {
             }
             throw new AuthenticationError('You need to be logged in!');
         },
-        product: async () => {return Product.find()}
+        getProducts: async () => {return Product.find({})}
     },
 
     Mutation: {
@@ -55,18 +55,11 @@ const resolvers = {
             throw new AuthenticationError('You need to be logged in!');
         },
 
-        RemoveFromCart: async (parent, { productId }, context) => {
+        RemoveFromCart: async (parent, {_id }, context) => {
             if (context.user) {
                 const updateUser = await User.findOneAndUpdate(
                     { _id: context.user._id },
-                    {
-                        $pull: {
-                            savedCart: {
-                                productId
-
-                            },
-                        },
-                    },
+                    {$pull: { savedCart: {_id} } },
                     { new: true }
                 );
                 return updatedUser;

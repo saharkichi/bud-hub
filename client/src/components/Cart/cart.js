@@ -16,7 +16,7 @@ const Cart = () => {
             const userData = data?.me || {};
           
             // create function that accepts the book's mongo _id value as param and deletes the book from the database
-            const handleDeleteProduct = async (productId) => {
+            const handleDeleteProduct = async (_id) => {
               // get token
               const token = Auth.loggedIn() ? Auth.getToken() : null;
           
@@ -26,11 +26,11 @@ const Cart = () => {
           
               try {
                 const { data } = await removeProduct({
-                  variables: { productId },
+                  variables: { _id},
                 });
           
                 // upon success, remove book's id from localStorage
-                removeProductId(productId);
+                removeProductId(_id);
               } catch (err) {
                 console.error(err);
               }
@@ -48,7 +48,7 @@ const Cart = () => {
         <CardColumns>
           {userData.savedCart?.map((product) => {
             return (
-              <Card key={product.productId} border="dark">
+              <Card key={product._id} border="dark">
                 {product.image ? (
                   <Card.Img
                     src={product.imageUrl}
@@ -62,7 +62,7 @@ const Cart = () => {
                   <Card.Text>{product.cbd_thc}</Card.Text>
                   <button
                     className="btn-block btn-danger"
-                    onClick={() => handleDeleteProduct(product.productId)}
+                    onClick={() => handleDeleteProduct(product._id)}
                   >
                     Remove from cart
                   </button>

@@ -50,8 +50,10 @@ Modal.setAppElement('#root')
 export default function App() {
   const [modalIsOpen, setModalIsOpen] = useState(true)
     return (
+      
       <body>
         <div className="App">
+        <ApolloProvider client = {client}>
           <Modal className="modal" isOpen={modalIsOpen}>
           <h3>Welcome to BudHub!</h3>
           <p>Are you over 19?</p>
@@ -62,7 +64,7 @@ export default function App() {
           
         </Modal>
 
-      <ApolloProvider client = {client}>
+      
       <Router>
         <Header/>
 
